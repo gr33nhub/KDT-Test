@@ -5,7 +5,7 @@
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A4")
 	(title_block
-		(title "Sheet Title A")
+		(title "Spannungsversorgung")
 		(date "2025-01-12")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
@@ -568,8 +568,8 @@
 		)
 	)
 	(rectangle
-		(start 129.54 110.49)
-		(end 137.16 125.73)
+		(start 137.16 83.185)
+		(end 147.32 95.885)
 		(stroke
 			(width 0)
 			(type dot)
@@ -667,7 +667,7 @@
 		(margins 4.4999 4.4999 4.4999 4.4999)
 		(stroke
 			(width -0.0001)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -690,7 +690,7 @@
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
 			(width -0.0001)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -730,18 +730,6 @@
 		)
 		(uuid "e0003229-9448-4893-9fb1-bea9e839bb75")
 	)
-	(junction
-		(at 144.78 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "41f4ed79-f5eb-4553-9c2b-652d8cc9e926")
-	)
-	(junction
-		(at 144.78 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a26ecc3b-7157-4070-99c2-b36d4ed3570c")
-	)
 	(wire
 		(pts
 			(xy 130.81 90.17) (xy 137.16 90.17)
@@ -764,17 +752,17 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 82.55) (xy 144.78 85.09)
+			(xy 144.78 95.25) (xy 144.78 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a81dacf4-d69d-46aa-a0a1-9e70349019bd")
+		(uuid "9b9affa7-42a5-4ccd-920b-e55c2d26a330")
 	)
 	(wire
 		(pts
-			(xy 144.78 95.25) (xy 144.78 97.79)
+			(xy 144.78 82.55) (xy 144.78 85.09)
 		)
 		(stroke
 			(width 0)
@@ -784,7 +772,7 @@
 	)
 	(polyline
 		(pts
-			(xy 129.54 120.65) (xy 116.84 124.46)
+			(xy 137.16 95.885) (xy 116.84 124.46)
 		)
 		(stroke
 			(width 0)
@@ -792,16 +780,6 @@
 			(color 255 0 0 1)
 		)
 		(uuid "dbc0dbb3-ec35-483a-84d2-c330277e1998")
-	)
-	(wire
-		(pts
-			(xy 144.78 85.09) (xy 144.78 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3483446-ae4e-40d1-9635-ddf4a060ae87")
 	)
 	(wire
 		(pts
@@ -875,7 +853,7 @@
 			(uuid "26b02eac-a5c8-44ad-99f7-d6267123fe40")
 		)
 		(instances
-			(project ""
+			(project "Project Architecture"
 				(path "/07236397-3ba4-47af-9809-3faac3a2aa49/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "R1")
 					(unit 1)
@@ -953,7 +931,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 97.79 0)
+		(at 144.78 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -962,7 +940,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1ed1989-46e9-41ca-b0a7-99a58a637fc9")
 		(property "Reference" "#PWR01"
-			(at 144.78 104.14 0)
+			(at 144.78 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -971,7 +949,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 102.87 0)
+			(at 144.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -979,7 +957,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 97.79 0)
+			(at 144.78 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -988,7 +966,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 97.79 0)
+			(at 144.78 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -997,7 +975,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 97.79 0)
+			(at 144.78 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1009,7 +987,7 @@
 			(uuid "e444a8b6-10fa-4edd-85f3-77f99e4e265c")
 		)
 		(instances
-			(project ""
+			(project "Project Architecture"
 				(path "/07236397-3ba4-47af-9809-3faac3a2aa49/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR01")
 					(unit 1)
@@ -1085,7 +1063,7 @@
 			(uuid "6f96a7fd-fa97-46a6-86a6-ea2d045d3aa9")
 		)
 		(instances
-			(project ""
+			(project "Project Architecture"
 				(path "/07236397-3ba4-47af-9809-3faac3a2aa49/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "Q1")
 					(unit 1)
@@ -1151,7 +1129,7 @@
 			(uuid "1f492c90-f884-4ae4-a83b-2466baaf242d")
 		)
 		(instances
-			(project ""
+			(project "Project Architecture"
 				(path "/07236397-3ba4-47af-9809-3faac3a2aa49/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR02")
 					(unit 1)
