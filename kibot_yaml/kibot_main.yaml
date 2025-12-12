@@ -563,7 +563,7 @@ definitions:
   COMPANY: HMSB
   DESIGNER: Flo, Alex
 
-  LOGO: 'Logos/dummy_logo.png'
+  LOGO: 'Logos/HMSB.png'
   GIT_URL: 'https://github.com/nguyen-v/KDT_Hierarchical_KiBot'
 
   # Preflight ==================================================================
